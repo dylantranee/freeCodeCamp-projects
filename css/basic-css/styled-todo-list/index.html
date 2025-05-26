@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="A simple, accessible, and styled to-do list web page."/>
+        <meta name="author" content="Your Name"/>
+        <title>Styled To-Do List</title>
+        <link rel="icon" type="image/svg+xml" href="checklist.svg"/>
+        <link href="styles.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+        <header>
+            <h1>My To-Do List</h1>
+        </header>
+        <main id="main-content" aria-label="To-Do List">
+            <ul class="todo-list">
+                <li>
+                    <input type="checkbox" id="todo-1">
+                    <label for="todo-1">Explore gaming keyboards</label>
+                    <ul class="sub-item">
+                        <li><a class="sub-item-link" href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">Store link</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <input type="checkbox" id="todo-2">
+                    <label for="todo-2">Finish the report</label>
+                    <ul class="sub-item">
+                        <li><a class="sub-item-link" href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">Request Access</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <input type="checkbox" id="todo-3">
+                    <label for="todo-3">View Phone's Warranty</label>
+                    <ul class="sub-item">
+                        <li><a class="sub-item-link" href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">View Receipts</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <input type="checkbox" id="todo-4">
+                    <label for="todo-4">Check Processor Specs</label>
+                    <ul class="sub-item">
+                        <li><a class="sub-item-link" href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">View Model Number</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </main>
+    </body>
+</html>
