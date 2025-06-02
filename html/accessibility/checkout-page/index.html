@@ -1,39 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Checkout Page</title>
-    </head>
-    <body>
-        <header>
-            <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
-            <h1>Checkout</h1>
-        </header>
-        <main id="main-content">
-            <section aria-labelledby="cart-heading">
-                <h2 id="cart-heading">Your Cart</h2>
-                <figure>
-                    <img src="https://cdn.freecodecamp.org/curriculum/labs/spoon.jpg" alt="A silver spoon.">
-                    <figcaption>Left-handed spoon<br>$29.99</figcaption>
-                </figure>
-            </section>
-            <section aria-labelledby="payment-heading">
-                <form method="POST" action="">
-                    <fieldset>
-                        <legend id="payment-heading">Payment Information</legend>
-                        <label for="card-name">Cardholder Name</label>
-                        <input type="text" id="card-name" name="card-name" required aria-required="true" autocomplete="cc-name"><br>
-                        <label for="card-number">Card Number</label>
-                        <input type="text" id="card-number" name="card-number" required aria-required="true" inputmode="numeric" pattern="[0-9]{13,19}" autocomplete="cc-number"><br>
-                        <label for="expiry-date">Expiry Date</label>
-                        <input type="month" id="expiry-date" name="expiry-date" required aria-required="true" autocomplete="cc-exp"><br>
-                        <label for="cvv">CVV</label>
-                        <input type="text" id="cvv" name="cvv" minlength="3" maxlength="4" required aria-required="true" inputmode="numeric" pattern="[0-9]{3,4}" autocomplete="cc-csc"><br>
-                        <button type="submit">Place Order</button>
-                    </fieldset>
-                </form>
-            </section>
-        </main>
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Page</title>
+  </head>
+  <body>
+    <header>
+      <a
+        href="#main-content"
+        class="skip-link"
+        style="
+          position: absolute;
+          left: -9999px;
+          top: auto;
+          width: 1px;
+          height: 1px;
+          overflow: hidden;
+        "
+        >Skip to main content</a
+      >
+      <h1>Checkout</h1>
+    </header>
+    <main id="main-content">
+      <section aria-labelledby="cart-heading">
+        <h2 id="cart-heading">Your Cart</h2>
+        <figure>
+          <img
+            src="https://cdn.freecodecamp.org/curriculum/labs/spoon.jpg"
+            alt="A silver spoon."
+          />
+          <figcaption>Left-handed spoon<br />$29.99</figcaption>
+        </figure>
+      </section>
+      <section aria-labelledby="payment-heading">
+        <form method="POST" action="">
+          <fieldset>
+            <legend id="payment-heading">Payment Information</legend>
+            <label for="card-name">Cardholder Name</label>
+            <input
+              type="text"
+              id="card-name"
+              name="card-name"
+              required
+              aria-required="true"
+              autocomplete="cc-name"
+            /><br />
+            <label for="card-number">Card Number</label>
+            <input
+              type="text"
+              id="card-number"
+              name="card-number"
+              required
+              aria-required="true"
+              inputmode="numeric"
+              pattern="[0-9]{13,19}"
+              autocomplete="cc-number"
+            /><br />
+            <label for="expiry-date">Expiry Date</label>
+            <input
+              type="month"
+              id="expiry-date"
+              name="expiry-date"
+              required
+              aria-required="true"
+              autocomplete="cc-exp"
+            /><br />
+            <label for="cvv">CVV</label>
+            <input
+              type="text"
+              id="cvv"
+              name="cvv"
+              minlength="3"
+              maxlength="4"
+              required
+              aria-required="true"
+              inputmode="numeric"
+              pattern="[0-9]{3,4}"
+              autocomplete="cc-csc"
+            /><br />
+            <button type="submit">Place Order</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>
